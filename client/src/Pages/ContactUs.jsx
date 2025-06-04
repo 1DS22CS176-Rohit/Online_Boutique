@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import Nav from '../Components/Nav';  // Corrected path for Nav component
+import { useState } from "react";
+import Nav from "../Components/Nav"; // Corrected path for Nav component
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -33,7 +33,8 @@ const ContactUs = () => {
             Contact <span className="text-blue-600">Us</span>
           </h1>
           <p className="text-lg text-gray-700">
-            We would love to hear from you! Reach out for any queries or feedback.
+            We would love to hear from you! Reach out for any queries or
+            feedback.
           </p>
         </div>
 
